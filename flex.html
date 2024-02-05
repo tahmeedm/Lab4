@@ -68,33 +68,38 @@ Description : Flex Layouts.
         body { margin: 0; padding: 0; }
         img { max-width: 100%; height: auto; }
         .container { 
-			/*I need some CSS codes.*/
+			display: flex;
+			flex-direction: column;
 		 }
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;}
 		.body { 
-			/*I need some CSS codes.*/
+			display: flex;
+			flex-direction: row;
 		}
         .main { 
 			padding: 15px; 
-			/*I need some CSS codes.*/
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
 		}
         
         .news-item { padding: 10px; }
         .row { 
-			/*I need some CSS codes.*/
+			display: flex;
+			flex-direction: row;
 		}
         
 
         @media screen and (min-width: 769px) {
             .menu { width: 150px; }     
 			.large { 
-				/*I need some CSS codes.*/
+				width: 100%;
 			}
 			.medium { 
-				/*I need some CSS codes.*/
+				width: 70%;
 			}
 			.small { 
-				/*I need some CSS codes.*/
+				width: 30%;
 			 }       
         }
 
