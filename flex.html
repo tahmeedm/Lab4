@@ -80,7 +80,7 @@ Description : Flex Layouts.
 			padding: 15px; 
 			display: flex;
 			flex-direction: column;
-			flex-grow: 1;
+			flex: 1;
 		}
         
         .news-item { padding: 10px; }
@@ -105,19 +105,32 @@ Description : Flex Layouts.
 
         @media screen and (max-width: 768px) {
 			.body { 
-				/*I need some CSS codes.*/
+				flex-direction: column;
 			}
             .menu ul { 
-				/*I need some CSS codes.*/
+				display: flex;
+				flex-direction: row;
 			 }            
-            /*I need some CSS codes.*/
+            .large {
+				width: 100%;
+			}
+			.medium {
+				width: 60%;
+			}
+			.small {
+				width: 40%;
+			}
+			
         }
 
         @media screen and (max-width: 480px) {
             .news-item header h1 { font-size: 18px; }
-            .medium, .small { 
-				/*I need some CSS codes.*/
-			 }
+            .large, .medium, .small { 
+				width: 100%;
+			}
+			 .row {
+				flex-direction: column;
+			}
         }
     </style>
 </head>
